@@ -1,17 +1,17 @@
-
 // IMPORT DEPENDENCY
 const express = require('express')
 require('dotenv').config()
 const PORT = process.env.PORT || 8000
 
 
+// MODULES
+const aiRoutes = require('./routes/aiRoutes')
+
+
 // MIDDLEWARE
 const app = express()
 
-
-app.get('/', (req, res) => {
-    return res.send('Hello')
-})
+app.use('/', aiRoutes.imageGenerator)
 
 
 app.listen(PORT, () => {
