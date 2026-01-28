@@ -2,14 +2,14 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [promt, setPromt] = useState("")
+  const [prompt, setPromt] = useState("")
   const [image, setImage] = useState("")
 
   const generateImage = async () => {
     const res = await fetch('http://localhost:8000/', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ promt })
+      body: JSON.stringify({ prompt })
     })
     const data = await res.json()
     setImage(data.image)

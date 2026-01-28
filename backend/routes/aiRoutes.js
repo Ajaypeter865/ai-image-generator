@@ -1,6 +1,7 @@
 
 const imageGenerator = async (req, res) => {
 
+
     const { prompt } = req.body
     console.log('Promt', prompt);
 
@@ -27,7 +28,7 @@ const imageGenerator = async (req, res) => {
         res.json({ image: `data:image/png;base64,${base64Image}` });
     } catch (error) {
         console.error("Error generating image:", error);
-         res.status(500).json({ error: "Image generation failed" });
+        res.status(500).json({ error: "Image generation failed" });
     }
 }
 
