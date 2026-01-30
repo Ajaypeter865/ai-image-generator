@@ -18,3 +18,13 @@ app.get('/', (req, res) => {
     return res.send('Hello')
 })
 app.post('/api/generate', aiRoutes.imageGenerator)
+
+
+ 
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+})
+
+
+
+module.exports = app
