@@ -6,7 +6,8 @@ const imageGenerator = async (req, res) => {
 
     try {
         // NEW ROUTER URL FORMAT
-        const API_URL = "https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0";
+        // const API_URL = "https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0";
+        const API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell";
 
         const response = await fetch(API_URL, {
             headers: {
