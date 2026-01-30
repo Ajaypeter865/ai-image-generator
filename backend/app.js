@@ -17,7 +17,7 @@ app.use(express.json())
 app.get('/', (req, res) => {
     return res.send('Hello')
 })
-app.post('/', aiRoutes.imageGenerator)
+app.post('/api/generate', aiRoutes.imageGenerator)
 
 
  
