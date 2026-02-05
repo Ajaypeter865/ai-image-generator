@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [prompt, setPrompt] = useState("") // Fixed typo
+  const [prompt, setPrompt] = useState("") 
   const [image, setImage] = useState("")
   const [loading, setLoading] = useState(false)
 

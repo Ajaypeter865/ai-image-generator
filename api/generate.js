@@ -1,4 +1,3 @@
-// This is a Vercel serverless function
 
 module.exports = async (req, res) => {
     // Enable CORS (Cross-Origin Resource Sharing)
